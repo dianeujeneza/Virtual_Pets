@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SquadTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-17T07:20:07" hostname="wecode-HP-280-G2-MT-Non-Legacy" time="0.003">
+  <properties/>
+  <testcase name="getSquadName_returnsCorrectSquadName_true" classname="SquadTest" time="0.001"/>
+  <testcase name="clearAllSquads_deletesAllSquadInstances" classname="SquadTest" time="0.0"/>
+  <testcase name="getAllSquads_containsAllSquads" classname="SquadTest" time="0.0"/>
+  <testcase name="getAllSquads" classname="SquadTest" time="0.0"/>
+  <testcase name="squadInstantiatesCorrecctly" classname="SquadTest" time="0.0"/>
+  <testcase name="deleteSquad_deletesSpecificSquad_true" classname="SquadTest" time="0.0"/>
+  <testcase name="getSquadSize_returnsCorrectSquadSize_true" classname="SquadTest" time="0.0"/>
+  <testcase name="findSquadById_returnsCorrectHeroIfMreThan1Exists" classname="SquadTest" time="0.0"/>
+  <testcase name="getSquadId_squadInstantiatesWithCorrectID" classname="SquadTest" time="0.0"/>
+  <testcase name="getCause_returnsCorrectCause_true" classname="SquadTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
