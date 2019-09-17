@@ -1,0 +1,21 @@
+body{
+background-image: url("https://www.barraques.cat/pngfile/big/90-909933_sexy-super-hero-wallpaper-hd-superhero-wallpapers-super.jpg");
+background-size: cover;
+color:white;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0px;
+}
+li{
+margin:10px;
+}
+.navbar{
+margin-bottom:0px;
+}
+li{
+  text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}

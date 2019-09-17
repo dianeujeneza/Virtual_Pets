@@ -1,0 +1,18 @@
+{{#partial "content"}}
+    <div class="row">
+        {{#each squadArrayList}}
+        <div class="col-md-3">
+            <div class="card">
+                <img src="/images/full.jpg" class="card-img-top" alt="full squad">
+                <div class="card-body">
+                    <h6 class="card-title">{{squadName}}</h6>
+                    {{#each heroesInSquad}}
+                        <h5 class="card-text">{{heroName}}</h5>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}

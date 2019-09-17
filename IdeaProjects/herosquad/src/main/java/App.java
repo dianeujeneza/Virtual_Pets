@@ -36,7 +36,7 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/heroes", (request, response) -> {
+        get("/hero", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Hero> heroes = Hero.getAllHeroes();
             model.put("heroes", heroes);
@@ -62,14 +62,14 @@ public class App {
             return modelAndView(model, "successH.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/squads", (request, response) -> {
+        get("/squad", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Squad> squads = Squad.getAllSquads();
             model.put("squads", squads);
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
-        post("/squads/new", (request, response) -> {
+        post("/squad/new", (request, response) -> {
             String squadName = request.queryParams("squadName");
             request.session().attribute("squadName", squadName);
             String cause = request.queryParams("cause");
@@ -80,7 +80,7 @@ public class App {
             return new ModelAndView(model, "successS.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/heroes/:heroID/delete", (req, res) -> {
+        get("/hero/:heroID/delete", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             int idOfHeroToDelete = Integer.parseInt(req.params(":heroID"));
             Hero deleteHero = Hero.findHeroById(idOfHeroToDelete);
@@ -88,7 +88,7 @@ public class App {
             return new ModelAndView(model, "successH.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/squads/:squadId/delete", (req, res) -> {
+        get("/squad/:squadId/delete", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             int idOfSquadToDelete = Integer.parseInt(req.params(":squadId"));
             Squad deleteSquad = Squad.findSquadById(idOfSquadToDelete);
@@ -115,7 +115,7 @@ public class App {
             return new ModelAndView(model,"addSquad.hbs");
         },new HandlebarsTemplateEngine());
 
-        get("/allsquads",(request, response) -> {
+        get("/allSquads",(request, response) -> {
             ArrayList<Hero>heroesInSquad=Squad.getSquadHeroes();
             ArrayList<Squad>squadArrayList=Squad.getAllSquads();
 
