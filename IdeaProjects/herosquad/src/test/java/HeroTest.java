@@ -27,12 +27,12 @@ public class HeroTest {
         Hero hero=setupHero();
         assertEquals("flight",hero.getStrength());
     }
-//
-//    @Test
-//    public void getWeakness_returnsCorrectweakness() throws Exception{
-//        Hero hero=setupHero();
-//        assertEquals("moon",hero.getWeakness());
-//    }
+
+    @Test
+    public void getWeakness_returnsCorrectweakness() throws Exception{
+        Hero hero=setupHero();
+        assertEquals("moon",hero.getWeakness());
+    }
 //
 //    @Test
 //    public void getAge_returnsCorrectAge() throws Exception {
