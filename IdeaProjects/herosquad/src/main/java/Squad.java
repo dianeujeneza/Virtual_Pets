@@ -36,19 +36,19 @@ public class Squad {
     public static ArrayList<Squad> getAllSquads(){
         return squadInstances;
     }
-//    public static void clearAllSquads(){
-//        squadInstances.clear();
-//    }
-//    public static Squad findSquadById(int id){
-//        return squadInstances.get(id-1);
-//    }
-//    public void deleteSquad(){
-//        squadInstances.remove(squadId-1);
-//    }
-//    public void addHero(Hero hero){
-//        heroes.add(hero);
-//    }
-//    public static ArrayList<Hero> getSquadHeroes(){
-//        return heroes;
-//    }
+    public static void clearAllSquads(){
+        squadInstances.clear();
+    }
+    public static Squad findSquadById(int id){
+        return squadInstances.get(id-1);
+    }
+    public void deleteSquad(){
+        squadInstances.remove(squadId-1);
+    }
+    public void addHero(Hero hero){
+        heroes.add(hero);
+    }
+    public static ArrayList<Hero> getSquadHeroes(){
+        return heroes;
+    }
 }
