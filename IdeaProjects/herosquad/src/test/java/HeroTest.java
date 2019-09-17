@@ -21,12 +21,12 @@ public class HeroTest {
         Hero hero=setupHero();
         assertEquals("superman",hero.getHeroName());
     }
-//
-//    @Test
-//    public void getStrength_returnsCorrectStrength_true()throws Exception {
-//        Hero hero=setupHero();
-//        assertEquals("flight",hero.getStrength());
-//    }
+
+    @Test
+    public void getStrength_returnsCorrectStrength_true()throws Exception {
+        Hero hero=setupHero();
+        assertEquals("flight",hero.getStrength());
+    }
 //
 //    @Test
 //    public void getWeakness_returnsCorrectweakness() throws Exception{
