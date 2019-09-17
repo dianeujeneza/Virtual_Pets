@@ -68,34 +68,34 @@ public class HeroTest {
         Hero hero=new Hero("superman","flight","moon",10);
         return hero;
     }
-//
-//    @Test
-//    public void getHeroID_heroInstantiatesWithId_true() {
-//        Hero hero=setupHero();
-//        assertEquals(1,hero.getHeroID());
-//    }
-//
-//    @Test
-//    public void findHeroById_returnsCorrectHero()throws Exception{
-//        Hero hero=setupHero();
-//        assertEquals(1,Hero.findHeroById(hero.getHeroID()).getHeroID());
-//    }
-//
-//    @Test
-//    public void findHeroById_returnsCorrectPostIfMoreThan1Exists()throws Exception{
-//        Hero hero=setupHero();
-//        Hero otherHero=setupHero();
-//        assertEquals(2,Hero.findHeroById(otherHero.getHeroID()).getHeroID());
-//    }
-//
-//    @Test
-//    public void deleteHero_deletesSpecificHero_true(){
-//        Hero hero=setupHero();
-//        Hero otherHero=setupHero();
-//        hero.deleteHero();
-//        assertEquals(1,Hero.getAllHeroes().size());
-//        assertEquals(Hero.getAllHeroes().get(0).getHeroID(),2);
-//
-//    }
+
+    @Test
+    public void getHeroID_heroInstantiatesWithId_true() {
+        Hero hero=setupHero();
+        assertEquals(1,hero.getHeroID());
+    }
+
+    @Test
+    public void findHeroById_returnsCorrectHero()throws Exception{
+        Hero hero=setupHero();
+        assertEquals(1,Hero.findHeroById(hero.getHeroID()).getHeroID());
+    }
+
+    @Test
+    public void findHeroById_returnsCorrectPostIfMoreThan1Exists()throws Exception{
+        Hero hero=setupHero();
+        Hero otherHero=setupHero();
+        assertEquals(2,Hero.findHeroById(otherHero.getHeroID()).getHeroID());
+    }
+
+    @Test
+    public void deleteHero_deletesSpecificHero_true(){
+        Hero hero=setupHero();
+        Hero otherHero=setupHero();
+        hero.deleteHero();
+        assertEquals(1,Hero.getAllHeroes().size());
+        assertEquals(Hero.getAllHeroes().get(0).getHeroID(),2);
+
+    }
 
 }
