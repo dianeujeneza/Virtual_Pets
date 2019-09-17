@@ -45,7 +45,7 @@ public class App {
             model.put("squads", squads);
 
             request.session().attribute("squadId");
-            return new ModelAndView(model, "heroes.hbs");
+            return new ModelAndView(model, "hero.hbs");
         }, new HandlebarsTemplateEngine());
 
         post("/hero/new", (request, response) -> {
