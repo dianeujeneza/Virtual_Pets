@@ -46,14 +46,14 @@ public class SquadTest {
         assertEquals(2,Squad.getAllSquads().size());
 
     }
-//
-//    @Test
-//    public void getAllSquads_containsAllSquads()throws Exception {
-//        Squad squad=setupSquad();
-//        Squad otherSquad=setupSquad();
-//        assertTrue(Squad.getAllSquads().contains(squad));
-//        assertTrue(Squad.getAllSquads().contains(otherSquad));
-//    }
+
+    @Test
+    public void getAllSquads_containsAllSquads()throws Exception {
+        Squad squad=setupSquad();
+        Squad otherSquad=setupSquad();
+        assertTrue(Squad.getAllSquads().contains(squad));
+        assertTrue(Squad.getAllSquads().contains(otherSquad));
+    }
 //
 //    @Test
 //    public void clearAllSquads_deletesAllSquadInstances()throws Exception{
