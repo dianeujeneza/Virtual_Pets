@@ -17,9 +17,9 @@ public class Hero {
         this.heroID = instances.size();
     }
 
-//    public String getHeroName() {
-//        return heroName;
-//    }
+    public String getHeroName() {
+        return heroName;
+    }
 //
 //    public String getStrength() {
 //        return strength;
