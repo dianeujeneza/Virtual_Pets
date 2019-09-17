@@ -24,7 +24,7 @@ public class App {
             port = 4567;
         }
         port(port);
-
+//
 //        staticFileLocation("/public");
 //        Hero.setUpNewHero();
 //        Hero.setUpNewHero1();
@@ -112,7 +112,7 @@ public class App {
 
             model.put("squadId",idOfSquadToAddTo);
 
-            return new ModelAndView(model,"addToSquad.hbs");
+            return new ModelAndView(model,"addSquad.hbs");
         },new HandlebarsTemplateEngine());
 
         get("/allsquads",(request, response) -> {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SquadTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-17T07:20:07" hostname="wecode-HP-280-G2-MT-Non-Legacy" time="0.003">
+<testsuite name="SquadTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-17T07:35:59" hostname="wecode-HP-280-G2-MT-Non-Legacy" time="0.003">
   <properties/>
   <testcase name="getSquadName_returnsCorrectSquadName_true" classname="SquadTest" time="0.001"/>
   <testcase name="clearAllSquads_deletesAllSquadInstances" classname="SquadTest" time="0.0"/>

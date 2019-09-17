@@ -1,0 +1,61 @@
+{{#partial "title"}}Heroes{{/partial}}
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/hero/new" method="post">
+
+                <div class="form-group">
+                    <label for="name">Hero Name</label>
+                    <input type="text" class="form-control" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="strength">Special Power</label>
+                    <input type="text" class="form-control" name="strength">
+                </div>
+
+                <div class="form-group">
+                    <label for="weakness">Weakness</label>
+                    <input type="text" class="form-control" name="weakness">
+                </div>
+
+                <div class="form-group">
+                    <label for="Age">Age</label>
+                    <input type="text" class="form-control" name="age">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Save Hero</button>
+
+            </form>
+        </div>
+        <div class="col-md-4">
+            {{#each heroes}}
+                <div class="card">
+                    <img class="card-img-top" src="/images/download.png" alt="Hero Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hero Name is: {{heroName}}</h5>
+                        <p class="card-text">Strength: {{strength}}</p>
+                        <p class="card-text">Weakness: {{weakness}}</p>
+                        <p class="card-text">Age: {{age}}</p>
+                        <label for="squad">Select your squad</label>
+                        <a class="btn btn-danger" href="/heroes/{{heroID}}/delete" >Delete Hero</a>
+
+                        <form action="/squad/{{squadId}}/hero/{{heroID}}" method="post">
+
+                            <input class="form-control" type="text" name="heroID" placeholder="Hero ID:{{heroID}}" value="{{heroID}}" readonly>
+                            <select class="form-control select2 mt15 mb0" name="squadId" data-placeholder="Assign to Squad">
+                                {{#each squads}}
+                                    <option value="{{squadId}}">{{squadName}}</option>
+                                {{/each}}
+                            </select>
+                            <br><button type="submit" class="btn btn-sm btn-success">Add to Squad</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+{{>layout.hbs}}
