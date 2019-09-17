@@ -47,13 +47,13 @@ public class HeroTest {
         assertEquals(2,Hero.getAllHeroes().size());
     }
 
-//    @Test
-//    public void getAllHeroes_returnsAllHeroes_true()throws Exception{
-//        Hero hero=setupHero();
-//        Hero otherHero=setupHero();
-//        assertTrue(Hero.getAllHeroes().contains(hero));
-//        assertTrue(Hero.getAllHeroes().contains(otherHero));
-//    }
+    @Test
+    public void getAllHeroes_returnsAllHeroes_true()throws Exception{
+        Hero hero=setupHero();
+        Hero otherHero=setupHero();
+        assertTrue(Hero.getAllHeroes().contains(hero));
+        assertTrue(Hero.getAllHeroes().contains(otherHero));
+    }
 //
 //    @Test
 //    public void clearAllHeroes() throws Exception{
