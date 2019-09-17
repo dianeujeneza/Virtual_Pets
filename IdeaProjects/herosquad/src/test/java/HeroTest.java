@@ -15,12 +15,12 @@ public class HeroTest {
         Hero hero=setupHero();
         assertTrue(hero instanceof Hero);
     }
-//
-//    @Test
-//    public void getHeroName_returnsCorrectName_true() throws Exception{
-//        Hero hero=setupHero();
-//        assertEquals("superman",hero.getHeroName());
-//    }
+
+    @Test
+    public void getHeroName_returnsCorrectName_true() throws Exception{
+        Hero hero=setupHero();
+        assertEquals("superman",hero.getHeroName());
+    }
 //
 //    @Test
 //    public void getStrength_returnsCorrectStrength_true()throws Exception {
