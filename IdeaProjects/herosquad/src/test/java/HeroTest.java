@@ -62,12 +62,12 @@ public class HeroTest {
         Hero.clearAllHeroes();
         assertTrue(Hero.getAllHeroes().isEmpty());
     }
-//
-//
-//    public Hero setupHero(){
-//        Hero hero=new Hero("superman","flight","moon",10);
-//        return hero;
-//    }
+
+
+    public Hero setupHero(){
+        Hero hero=new Hero("superman","flight","moon",10);
+        return hero;
+    }
 //
 //    @Test
 //    public void getHeroID_heroInstantiatesWithId_true() {
