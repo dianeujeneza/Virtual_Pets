@@ -1,17 +1,20 @@
+import org.junit.After;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class HeroTest {
 
-//    @After
-//    public void tearDown(){
-//        Hero.clearAllHeroes();
-//    }
-//
-//    @Test
-//    public void hero_instantiatesCorrectly()throws Exception{
-//        Hero hero=setupHero();
-//        assertTrue(hero instanceof Hero);
-//    }
+    @After
+    public void tearDown(){
+        Hero.clearAllHeroes();
+    }
+
+    @Test
+    public void hero_instantiatesCorrectly()throws Exception{
+        Hero hero=setupHero();
+        assertTrue(hero instanceof Hero);
+    }
 //
 //    @Test
 //    public void getHeroName_returnsCorrectName_true() throws Exception{
