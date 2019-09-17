@@ -1,0 +1,49 @@
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/squads/new" method="post">
+                <div class="form-group">
+                    <label for="squadName">Squad Name</label>
+                    <input type="text" class="form-control" name="squadName">
+                </div>
+                <div class="form-group">
+                    <label for="cause">Fighting cause</label>
+                    <input type="text" class="form-control" name="cause">
+                </div>
+                <div class="form-group">
+                    <label for="squadSize">Squad Size</label>
+                    <input type="text" class="form-control" name="squadSize">
+                </div>
+                <button class="btn btn-primary" type="submit">Add Squad</button>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            {{#each squads}}
+                <div class="card">
+                    <img class="card-img-top" src="images/squads.jpg" alt="Squad Picture">
+                    <div class="card-body">
+                        <h5 class="card-title">{{squadName}}</h5>
+                        <p class="card-text">{{cause}}</p>
+                        <p class="card-text">{{squadSize}}</p>
+                        <a class="btn btn-primary" href="/allSquads" name="squadId"role="button">View Heroes</a>
+                        <a class="btn btn-danger" href="/squads/{{squadId}}/delete" >Delete Squad(no undo)</a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    <div class="col-md-4">
+        {{#each heroSquads}}
+            <img class="card-img-top" src="images/squads.jpg" alt="Squad Picture">
+            <div class="card-body">
+                <h5 class="card-title">{{squadName}}</h5>
+                <p class="card-text">{{heroName}}</p>
+                <p class="card-text">{{weakness}}</p>
+                <p class="card-text">{{strength}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    </div>
+{{/partial}}
+{{>layout.hbs}}

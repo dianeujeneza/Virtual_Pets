@@ -59,14 +59,14 @@ public class App {
             Hero hero = new Hero(name, strength, weakness, age);
 
             model.put("hero", hero);
-            return modelAndView(model, "newHero.hbs");
+            return modelAndView(model, "successH.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/squads", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Squad> squads = Squad.getAllSquads();
             model.put("squads", squads);
-            return new ModelAndView(model, "squads.hbs");
+            return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
         post("/squads/new", (request, response) -> {
@@ -77,7 +77,7 @@ public class App {
             Squad squad = new Squad(squadSize, squadName, cause);
             Map<String, Object> model = new HashMap<>();
             model.put("squad", squad);
-            return new ModelAndView(model, "newSquad.hbs");
+            return new ModelAndView(model, "successS.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/heroes/:heroID/delete", (req, res) -> {
@@ -85,7 +85,7 @@ public class App {
             int idOfHeroToDelete = Integer.parseInt(req.params(":heroID"));
             Hero deleteHero = Hero.findHeroById(idOfHeroToDelete);
             deleteHero.deleteHero();
-            return new ModelAndView(model, "newHero.hbs");
+            return new ModelAndView(model, "successH.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/squads/:squadId/delete", (req, res) -> {
@@ -93,7 +93,7 @@ public class App {
             int idOfSquadToDelete = Integer.parseInt(req.params(":squadId"));
             Squad deleteSquad = Squad.findSquadById(idOfSquadToDelete);
             deleteSquad.deleteSquad();
-            return new ModelAndView(model, "newSquad.hbs");
+            return new ModelAndView(model, "successS.hbs");
         }, new HandlebarsTemplateEngine());
 
         post("/squad/:squadId/hero/:heroID",(request, response) ->{

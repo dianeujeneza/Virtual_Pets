@@ -1,0 +1,25 @@
+{{#block "header"}}
+    <!Doctype HTML>
+    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/hero">Heroes</a></li>
+            <li class="nav-item"><a href="/squads">Squads</a></li>
+            <li class="nav-item"><a href="/allSquad">Hero Squads</a></li>
+        </ul>
+
+        {{#block "content"}}
+
+        {{/block}}
+    </div>
+    {{#block "footer"}}
+
+    {{/block}}
+{{/block}}
