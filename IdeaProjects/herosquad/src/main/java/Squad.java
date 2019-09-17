@@ -8,14 +8,14 @@ public class Squad {
     private static ArrayList<Squad> squadInstances=new ArrayList<>();
     private static ArrayList<Hero> heroes=new ArrayList<>();
 
-//
-//    public Squad(int squadSize, String squadName, String cause) {
-//        this.squadSize = squadSize;
-//        this.squadName = squadName;
-//        this.cause = cause;
-//        squadInstances.add(this);
-//        this.squadId=squadInstances.size();
-//    }
+
+    public Squad(int squadSize, String squadName, String cause) {
+        this.squadSize = squadSize;
+        this.squadName = squadName;
+        this.cause = cause;
+        squadInstances.add(this);
+        this.squadId=squadInstances.size();
+    }
 //
 //    public int getSquadId() {
 //        return squadId;
