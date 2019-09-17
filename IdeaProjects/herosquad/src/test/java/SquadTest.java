@@ -15,19 +15,19 @@ public class SquadTest {
         Squad squad=setupSquad();
         assertTrue(squad instanceof Squad);
     }
-//
-//    @Test
-//    public void getSquadSize_returnsCorrectSquadSize_true() {
-//        Squad squad=setupSquad();
-//        assertEquals(5,squad.getSquadSize());
-//    }
-//
-//    @Test
-//    public void getSquadName_returnsCorrectSquadName_true() {
-//        Squad squad=setupSquad();
-//        assertEquals("avengers",squad.getSquadName());
-//    }
-//
+
+    @Test
+    public void getSquadSize_returnsCorrectSquadSize_true() {
+        Squad squad=setupSquad();
+        assertEquals(5,squad.getSquadSize());
+    }
+
+    @Test
+    public void getSquadName_returnsCorrectSquadName_true() {
+        Squad squad=setupSquad();
+        assertEquals("avengers",squad.getSquadName());
+    }
+
 //    @Test
 //    public void getCause_returnsCorrectCause_true() {
 //        Squad squad=setupSquad();
