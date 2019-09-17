@@ -38,14 +38,14 @@ public class SquadTest {
         Squad squad=new Squad(5,"avengers","peace");
         return squad;
     }
-//
-//    @Test
-//    public void getAllSquads()throws Exception {
-//        Squad squad=setupSquad();
-//        Squad otherSquad=setupSquad();
-//        assertEquals(2,Squad.getAllSquads().size());
-//
-//    }
+
+    @Test
+    public void getAllSquads()throws Exception {
+        Squad squad=setupSquad();
+        Squad otherSquad=setupSquad();
+        assertEquals(2,Squad.getAllSquads().size());
+
+    }
 //
 //    @Test
 //    public void getAllSquads_containsAllSquads()throws Exception {
