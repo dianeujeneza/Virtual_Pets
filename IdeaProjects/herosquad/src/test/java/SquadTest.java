@@ -28,16 +28,16 @@ public class SquadTest {
         assertEquals("avengers",squad.getSquadName());
     }
 
-//    @Test
-//    public void getCause_returnsCorrectCause_true() {
-//        Squad squad=setupSquad();
-//        assertEquals("peace",squad.getCause());
-//    }
-//
-//    public Squad setupSquad(){
-//        Squad squad=new Squad(5,"avengers","peace");
-//        return squad;
-//    }
+    @Test
+    public void getCause_returnsCorrectCause_true() {
+        Squad squad=setupSquad();
+        assertEquals("peace",squad.getCause());
+    }
+
+    public Squad setupSquad(){
+        Squad squad=new Squad(5,"avengers","peace");
+        return squad;
+    }
 //
 //    @Test
 //    public void getAllSquads()throws Exception {
