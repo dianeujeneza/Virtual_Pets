@@ -122,7 +122,7 @@ public class App {
             Map<String,Object>model=new HashMap<>();
             model.put("heroesInSquad",heroesInSquad);
             model.put("squadArrayList",squadArrayList);
-            return new ModelAndView(model,"allsquads.hbs");
+            return new ModelAndView(model,"allSquads.hbs");
         },new HandlebarsTemplateEngine());
 
     }
