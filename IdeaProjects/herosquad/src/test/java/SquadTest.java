@@ -54,34 +54,34 @@ public class SquadTest {
         assertTrue(Squad.getAllSquads().contains(squad));
         assertTrue(Squad.getAllSquads().contains(otherSquad));
     }
-//
-//    @Test
-//    public void clearAllSquads_deletesAllSquadInstances()throws Exception{
-//        Squad squad=setupSquad();
-//        Squad otherSquad=setupSquad();
-//        Squad.clearAllSquads();
-//        assertTrue(Squad.getAllSquads().isEmpty());
-//    }
-//
-//    @Test
-//    public void getSquadId_squadInstantiatesWithCorrectID() throws Exception{
-//        Squad squad=setupSquad();
-//        assertEquals(1,squad.getSquadId());
-//    }
-//    @Test
-//    public void findSquadById_returnsCorrectHeroIfMreThan1Exists()throws Exception{
-//        Squad squad=setupSquad();
-//        Squad otherSquad=setupSquad();
-//        assertEquals(2,Squad.findSquadById(otherSquad.getSquadId()).getSquadId());
-//    }
-//    @Test
-//    public void deleteSquad_deletesSpecificSquad_true(){
-//        Squad squad=setupSquad();
-//        Squad otherSquad=setupSquad();
-//        squad.deleteSquad();
-//        assertEquals(1,Squad.getAllSquads().size());
-//        assertEquals(Squad.getAllSquads().get(0).getSquadId(),2);
-//
-//    }
+
+    @Test
+    public void clearAllSquads_deletesAllSquadInstances()throws Exception{
+        Squad squad=setupSquad();
+        Squad otherSquad=setupSquad();
+        Squad.clearAllSquads();
+        assertTrue(Squad.getAllSquads().isEmpty());
+    }
+
+    @Test
+    public void getSquadId_squadInstantiatesWithCorrectID() throws Exception{
+        Squad squad=setupSquad();
+        assertEquals(1,squad.getSquadId());
+    }
+    @Test
+    public void findSquadById_returnsCorrectHeroIfMreThan1Exists()throws Exception{
+        Squad squad=setupSquad();
+        Squad otherSquad=setupSquad();
+        assertEquals(2,Squad.findSquadById(otherSquad.getSquadId()).getSquadId());
+    }
+    @Test
+    public void deleteSquad_deletesSpecificSquad_true(){
+        Squad squad=setupSquad();
+        Squad otherSquad=setupSquad();
+        squad.deleteSquad();
+        assertEquals(1,Squad.getAllSquads().size());
+        assertEquals(Squad.getAllSquads().get(0).getSquadId(),2);
+
+    }
 
 }
