@@ -39,14 +39,14 @@ public class HeroTest {
         Hero hero=setupHero();
         assertEquals(10,hero.getAge());
     }
-//
-//    @Test
-//    public void getAllHeroes_returnsAllHeroCreated()throws Exception {
-//        Hero hero=setupHero();
-//        Hero otherHero=setupHero();
-//        assertEquals(2,Hero.getAllHeroes().size());
-//    }
-//
+
+    @Test
+    public void getAllHeroes_returnsAllHeroCreated()throws Exception {
+        Hero hero=setupHero();
+        Hero otherHero=setupHero();
+        assertEquals(2,Hero.getAllHeroes().size());
+    }
+
 //    @Test
 //    public void getAllHeroes_returnsAllHeroes_true()throws Exception{
 //        Hero hero=setupHero();
