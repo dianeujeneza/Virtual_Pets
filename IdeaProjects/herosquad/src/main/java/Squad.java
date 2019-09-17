@@ -16,26 +16,26 @@ public class Squad {
         squadInstances.add(this);
         this.squadId=squadInstances.size();
     }
-//
-//    public int getSquadId() {
-//        return squadId;
-//    }
-//
-//    public int getSquadSize() {
-//        return squadSize;
-//    }
-//
-//    public String getSquadName() {
-//        return squadName;
-//    }
-//
-//    public String getCause() {
-//        return cause;
-//    }
-//
-//    public static ArrayList<Squad> getAllSquads(){
-//        return squadInstances;
-//    }
+
+    public int getSquadId() {
+        return squadId;
+    }
+
+    public int getSquadSize() {
+        return squadSize;
+    }
+
+    public String getSquadName() {
+        return squadName;
+    }
+
+    public String getCause() {
+        return cause;
+    }
+
+    public static ArrayList<Squad> getAllSquads(){
+        return squadInstances;
+    }
 //    public static void clearAllSquads(){
 //        squadInstances.clear();
 //    }
