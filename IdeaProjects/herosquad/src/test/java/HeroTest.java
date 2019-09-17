@@ -54,14 +54,14 @@ public class HeroTest {
         assertTrue(Hero.getAllHeroes().contains(hero));
         assertTrue(Hero.getAllHeroes().contains(otherHero));
     }
-//
-//    @Test
-//    public void clearAllHeroes() throws Exception{
-//        Hero hero=setupHero();
-//        Hero otherHero=setupHero();
-//        Hero.clearAllHeroes();
-//        assertTrue(Hero.getAllHeroes().isEmpty());
-//    }
+
+    @Test
+    public void clearAllHeroes() throws Exception{
+        Hero hero=setupHero();
+        Hero otherHero=setupHero();
+        Hero.clearAllHeroes();
+        assertTrue(Hero.getAllHeroes().isEmpty());
+    }
 //
 //
 //    public Hero setupHero(){
