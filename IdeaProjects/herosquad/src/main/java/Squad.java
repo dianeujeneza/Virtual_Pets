@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Squad {
-//    private int squadId;
-//    private int squadSize;
-//    private String squadName;
-//    private String cause;
-//    private static ArrayList<Squad> squadInstances=new ArrayList<>();
-//    private static ArrayList<Hero> heroes=new ArrayList<>();
-//
+    private int squadId;
+    private int squadSize;
+    private String squadName;
+    private String cause;
+    private static ArrayList<Squad> squadInstances=new ArrayList<>();
+    private static ArrayList<Hero> heroes=new ArrayList<>();
+
 //
 //    public Squad(int squadSize, String squadName, String cause) {
 //        this.squadSize = squadSize;
