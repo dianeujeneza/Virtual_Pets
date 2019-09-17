@@ -2,16 +2,16 @@ import static org.junit.Assert.*;
 
 public class SquadTest {
 
-//    @After
-//    public void tearDown() {
-//        Squad.clearAllSquads();
-//    }
-//
-//    @Test
-//    public void squadInstantiatesCorrecctly(){
-//        Squad squad=setupSquad();
-//        assertTrue(squad instanceof Squad);
-//    }
+    @After
+    public void tearDown() {
+        Squad.clearAllSquads();
+    }
+
+    @Test
+    public void squadInstantiatesCorrecctly(){
+        Squad squad=setupSquad();
+        assertTrue(squad instanceof Squad);
+    }
 //
 //    @Test
 //    public void getSquadSize_returnsCorrectSquadSize_true() {
