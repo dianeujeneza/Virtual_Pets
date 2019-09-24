@@ -29,7 +29,7 @@ public class HeroTest {
     }
 
     @Test
-    public void getWeakness_returnsCorrectweakness() throws Exception{
+    public void getWeakness_returnsCorrectWeakness() throws Exception{
         Hero hero=setupHero();
         assertEquals("moon",hero.getWeakness());
     }
