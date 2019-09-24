@@ -11,7 +11,7 @@ public class SquadTest {
     }
 
     @Test
-    public void squadInstantiatesCorrecctly(){
+    public void squadInstantiatesCorrectly(){
         Squad squad=setupSquad();
         assertTrue(squad instanceof Squad);
     }
