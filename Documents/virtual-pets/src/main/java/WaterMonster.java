@@ -71,6 +71,15 @@ public class WaterMonster extends Monster implements DatabaseManagement{
         }
     }
 
-
+    public static WaterMonster find(int id) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM monsters where id=:id";
+            WaterMonster monster = con.createQuery(sql)
+                    .addParameter("id", id)
+                    .throwOnMappingFailure(false)
+                    .executeAndFetchFirst(WaterMonster.class);
+            return monster;
+        }
+    }
 
 }
